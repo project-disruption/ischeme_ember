@@ -1,10 +1,18 @@
-/*jshint node:true*/
+/* jshint node:true */
 /* global require, module */
-var EmberApp = require('ember-cli/lib/broccoli/ember-app');
+const EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
 module.exports = function(defaults) {
-  var app = new EmberApp(defaults, {
+  const app = new EmberApp(defaults, {
     // Add options here
+    dotEnv: {
+      clientAllowedKeys: [
+        'FIREBASE_API_KEY',
+        'FIREBASE_AUTH_DOMAIN',
+        'FIREBASE_DATABASE_URL',
+        'FIREBASE_STORAGE_BUCKET']
+    }
+
   });
 
   // Use `app.import` to add additional libraries to the generated

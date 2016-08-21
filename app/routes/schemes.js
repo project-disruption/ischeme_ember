@@ -22,6 +22,6 @@ import Ember from 'ember';
 export default Ember.Route.extend({
   model() {
     // return schemes
-    this.store.findAll('scheme')
+    return this.store.findAll('scheme')
   }
 });
