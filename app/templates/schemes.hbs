@@ -1,0 +1,8 @@
+<h1>Schemes</h1>
+<ul>
+  {{#each model as |scheme|}}
+  <li>{{scheme.name}} - {{scheme.payoutLimit}}</li>
+  {{/each}}
+</ul>
+
+{{outlet}}
