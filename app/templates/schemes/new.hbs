@@ -1,6 +1,12 @@
 
     <h1>Create a new scheme</h1>
 
+    <label>Name</label>{{ input value=name}}<br />
+    <label>Description</label>{{ textarea value=description}}<br />
+    <label>PayoutLimit</label>{{ input }}<br />
+    <label>Excess</label>{{ input }}<br />
+    <label>Premium</label>{{ input }}<br /><br />
 
+{{input action="submit" type="submit"}}
 
     {{outlet}}
