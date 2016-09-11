@@ -6,5 +6,5 @@ export default DS.Model.extend({
   description: DS.attr(),
   payoutLimit: DS.attr(),
   excess: DS.attr(),
-  premium: DS.attr()
+  premium: DS.attr(),
 });
