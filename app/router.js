@@ -7,7 +7,12 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('schemes');
+  this.route('scheme-detail')
+  this.route('schemes', function() {
+    this.route('new');
+    this.route('edit');
+  });
+  this.route('scheme', { path: '/scheme/:id'});
 });
 
 export default Router;
