@@ -10,7 +10,8 @@
   "scripts": {
     "build": "ember build",
     "start": "ember server",
-    "test": "ember test"
+    "test": "ember test",
+    "ember": "ember"
   },
   "repository": "",
   "engines": {
@@ -41,6 +42,10 @@
     "ember-resolver": "^2.0.3",
     "ember-welcome-page": "^1.0.1",
     "emberfire": "2.0.1",
+    "eslint": "^3.5.0",
+    "eslint-config-standard": "^6.0.0",
+    "eslint-plugin-promise": "^2.0.1",
+    "eslint-plugin-standard": "^2.0.0",
     "loader.js": "^4.0.1"
   }
 }
