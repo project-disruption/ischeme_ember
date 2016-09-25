@@ -1,8 +1,8 @@
 <h1>Schemes</h1>
 <ul>
   {{#each model as |scheme|}}
-  <!-- {{scheme-detail detail=scheme}} -->
-  {{#link-to 'scheme' scheme}}<li>{{scheme.name}} - {{scheme.payoutLimit}}</li>{{/link-to}}
+  {{scheme-listing detail=scheme}}
+  <!-- {{#link-to 'scheme' scheme}}<li>{{scheme.name}} - {{scheme.payoutLimit}}</li>{{/link-to}} -->
   {{/each}}
 </ul>
 

@@ -2,6 +2,7 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model(params) {
-    return this.store.query('scheme', { filter: { id: params.id } })
+    const data = this.store.findRecord('scheme', params.id)
+    return data
   }
 });

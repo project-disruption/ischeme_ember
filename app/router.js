@@ -12,7 +12,7 @@ Router.map(function() {
     this.route('new');
     this.route('edit');
   });
-  this.route('scheme', { path: '/scheme/:id'});
+  this.route('scheme',{ path: '/scheme/:id'});
 });
 
 export default Router;

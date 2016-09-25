@@ -3,9 +3,9 @@
 
     <label>Name</label>{{ input value=name}}<br />
     <label>Description</label>{{ textarea value=description}}<br />
-    <label>PayoutLimit</label>{{ input }}<br />
-    <label>Excess</label>{{ input }}<br />
-    <label>Premium</label>{{ input }}<br /><br />
+    <label>PayoutLimit</label>{{ input value=payoutLimit }}<br />
+    <label>Excess</label>{{ input value=excess }}<br />
+    <label>Premium</label>{{ input value=premium }}<br /><br />
 
     <button {{action "submit"}}>Submit</button>
 
