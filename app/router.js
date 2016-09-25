@@ -10,9 +10,11 @@ Router.map(function() {
   this.route('scheme-detail')
   this.route('schemes', function() {
     this.route('new');
-    this.route('edit');
   });
-  this.route('scheme',{ path: '/scheme/:id'});
+  this.route('scheme',{ path: 'scheme/:id'}, function() {
+    this.route('edit');
+
+  });
 });
 
 export default Router;

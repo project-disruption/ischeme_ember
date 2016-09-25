@@ -3,3 +3,6 @@
 
 {{detail.name}}
 {{detail.description}}
+  {{#link-to 'scheme' detail}}View Detail{{/link-to}}
+  {{#link-to 'scheme.edit' detail }}<button>Edit Scheme</button>{{/link-to}}
+  <button {{action "destroy" detail}}>Delete Scheme</button>
