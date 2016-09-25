@@ -1,0 +1,12 @@
+
+<h1>Edit Scheme</h1>
+
+<label>Name</label>{{ input value=model.name}}<br />
+<label>Description</label>{{ textarea value=model.description}}<br />
+<label>PayoutLimit</label>{{ input value=model.payoutLimit }}<br />
+<label>Excess</label>{{ input value=model.excess }}<br />
+<label>Premium</label>{{ input value=model.premium }}<br /><br />
+
+<button {{action "submit" model}}>Submit</button>
+
+{{outlet}}
