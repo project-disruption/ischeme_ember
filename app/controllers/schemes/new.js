@@ -7,7 +7,7 @@ export default Ember.Controller.extend({
         name: this.get('name'),
         description: this.get('description'),
         excess: this.get('excess'),
-        payoutLimit: this.get('payoutLimit'),
+        "payout_limit": this.get('payoutLimit'),
         premium: this.get('premium')
       }
       const newScheme = this.store.createRecord('scheme', scheme)

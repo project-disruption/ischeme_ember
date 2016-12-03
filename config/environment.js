@@ -24,7 +24,7 @@ module.exports = function(environment) {
       storageBucket: process.env.FIREBASE_STORAGE_BUCKET,
     }
   };
-
+  //
   ENV['ember-simple-auth'] = {
     authorizer: 'authorizer:custom',
     routeAfterAuthentication: '/'
