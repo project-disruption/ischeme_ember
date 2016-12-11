@@ -13,9 +13,11 @@ Router.map(function() {
   });
   this.route('scheme',{ path: 'scheme/:id'}, function() {
     this.route('edit');
-
   });
-  this.route('login')
+  this.route('user', function() {
+    this.route('sign-up');
+    this.route('login');
+  });
 });
 
 export default Router;
