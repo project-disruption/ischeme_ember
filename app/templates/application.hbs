@@ -1,19 +1,19 @@
-<h1>Page Title</h1>
-
-<nav>
-  <a href="/schemes">Home</a>
-</nav>
+<h1>iScheme</h1>
 
 {{#if session.isAuthenticated}}
-  Yes
+
+<nav>
+  {{#link-to 'index'}}Home{{/link-to}}
+  {{#link-to 'schemes'}}Schemes{{/link-to}}
+  <a href="#" {{action 'invalidateSession'}}>Logout</ a>
+</nav>
+
+
 {{else}}
- No
+
+{{#link-to 'user.sign-up'}}Sign Up{{/link-to}}
+{{#link-to 'user.login'}}Login{{/link-to}}
+
 {{/if}}
 
-
-
 {{outlet}}
-
-
-
-<li>< a href="#" {{action 'invalidateSession'}}>Logout</ a></li>
